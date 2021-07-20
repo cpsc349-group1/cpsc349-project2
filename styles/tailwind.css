@@ -5,8 +5,10 @@
 /* Custom Tailwind classes go here */
 @layer components {
 
+    
     .custom-tailwind {
         @apply text-white bg-blue-500
+
     }
 
 }
