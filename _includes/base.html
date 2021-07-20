@@ -6,8 +6,48 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
         <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        <style>
+            header{
+                background-color: lightblue;
+                color: black;
+            }
+            nav{
+                background-color: maroon;
+                color: black;
+            }
+            body{
+                background-color: {{color_keyword}};
+                {% if color_keyword == 'black' %}
+                    color: white;
+                {% endif %}
+            }
+            footer{
+                background-color: lightblue;
+                color: black;
+            }
+        </style> 
     </head>
+    
     <body>
-        {{ content }}
+    
+        <header>
+            <h1>{{ site }}</h1>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a href="/">Index</a></li>
+                <li><a href="/about/">About Us</a></li>
+            </ul>
+        </nav>
+    
+        {{ content }}    
+    
+    
+        <footer>
+            Copyright @ 2021 CSUF Team 1
+        </footer>
+    
     </body>
 </html>
