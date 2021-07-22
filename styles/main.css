@@ -1,8 +1,8 @@
 header{
     background-color: lightblue;
     color: black;
-    display: flex;
     width: 100%;
+    max-width: 100%;
 }
 nav{
     background-color: maroon;
