@@ -11,7 +11,7 @@ pagination:
 
 <p class ="indexPetPhotos">
     Pet photos from 
-    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+    <a class="unsplashLink" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
         Unsplash
     </a>
 </p>
@@ -19,7 +19,7 @@ pagination:
 <ul>
     {% for photo in pics %}
         <li>
-            <a href="{{ photo.url }}">
+            <a class="photoUrl" href="{{ photo.url }}">
                 A {{ photo.data.photo_keyword }} photo
                 by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
             </a>
@@ -29,12 +29,12 @@ pagination:
     {% endfor %}
 </ul>
 
-<div class= "prevNext">
+<div class="prevNext">
     {% if pagination.previous %}
-        <a href="{{ pagination.previous }}">Previous</a>
+        <a class="previous" href="{{ pagination.previous }}">Previous</a>
     {% endif %}
     
     {% if pagination.next %}
-        <a href="{{ pagination.next }}">Next</a>
+        <a class="next" href="{{ pagination.next }}">Next</a>
     {% endif %}
 </div>
