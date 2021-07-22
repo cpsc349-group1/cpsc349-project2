@@ -6,29 +6,43 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
         <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
+        <link rel="stylesheet" href="{{ '/styles/flexbox.css' | url }}">
+        <link rel="stylesheet" href="{{ '/styles/grid.css' | url }}">
         <link rel="stylesheet" href="https://unpkg.com/mvp.css">
         
     </head>
     
-    <body>
+
+    <header>
+        <h1> Pet Photos</h1>
+    </header>
     
-        <header>
-            <h1>{{ site }}</h1>
-        </header>
-    
-        <nav>
-            <ul>
-                <li><a href="/">Index</a></li>
-                <li><a href="/about/">About Us</a></li>
-            </ul>
-        </nav>
-    
+    <body class = "frontpage">
+            <nav class ="nav">
+                <ul class= "nav_list">
+                    <li id= "index"><a href="/">Index</a></li>
+                    <li id= "aboutus"><a href="/about/">About Us</a></li>
+                </ul>
+            </nav>
+            
+            <nav class ="mobileNav">
+                <ul class= "mobileNavlist">
+                    <li class= "mobileNavButton"><a href ="#">Navigation</a>
+                        <ul>
+                            <li id= "mobileIndex"><a href="/">Index</a></li>
+                            <li id= "mobileAboutUs"><a href="/about/">About Us</a></li>
+                        <ul>
+                    </li>
+                </ul>
+            </nav>
+
+
         {{ content }}    
-    
-    
-        <footer>
-            Copyright @ 2021 CSUF Team 1
-        </footer>
-    
     </body>
+
+    <div class="footer">
+        <footer>
+             Copyright @ 2021 CSUF Team 1
+        </footer>
+    </div>
 </html>
