@@ -11,8 +11,10 @@
     display: grid;
 }
 
-
 .photoUrl{
+    display: grid;
+    justify-content: center;
+    line-height: 47px;
     padding-right: 10px;
 }
 
@@ -29,7 +31,8 @@ body{
 .indexPetPhotos{ 
     display: grid;
     justify-content: center;
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+    justify-items: center;
+
 }
 
 .unsplashLink{
