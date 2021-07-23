@@ -1,0 +1,39 @@
+---
+title: Welcome
+layout: /tailwind-ver/tailwindbase
+pagination: 
+    data: collections.photos
+    size: 10
+    alias: pics
+---
+
+<link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
+
+<p class ="flex justify-center pb-4">
+    Pet photos from  
+    <a class="pl-1 text-blue-500" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+
+<ul>
+    {% for photo in pics %}
+        <li class="flex flex-row justify-center items-center p-4">
+            <a class="pr-2 text-blue-500" href="{{ photo.url }}">
+                A {{ photo.data.photo_keyword }} photo
+                by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
+            </a>
+            <p> {{ photo.data.ai_description }}</p>
+        </li>
+    {% endfor %}
+</ul>
+
+<div class="flex flex-row justify-center items-center text-blue-500 pb-2">
+    {% if pagination.previous %}
+        <a class="pr-2" href="{{ pagination.previous }}">Previous</a>
+    {% endif %}
+    
+    {% if pagination.next %}
+        <a href="{{ pagination.next }}">Next</a>
+    {% endif %}
+</div>

@@ -1,12 +1,8 @@
 /* Index page*/
 
-/*header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-weight: 500;
-    background-color: lightblue;
-}*/
+nav {
+    margin-bottom: 2.5rem;
+}
 
 .previous,
 .next{
@@ -18,9 +14,21 @@
     display: flex;
 }
 
+.photoli {
+    display:flex;
+    justify-content: center;
+}
 
 .photoUrl{
+    display: flex;
+    justify-content: center;
+    line-height: 47px;
     padding-right: 10px;
+}
+
+
+.indexPhotoDescription{
+    display: flex;
 }
 
 body{
@@ -43,10 +51,6 @@ body{
     padding-left: 5px;
 }
 
-#indexPhotoDescription{ /* testing*/
-    display: flex;
-}
-
 .nav{
     display: flex;
     justify-content: center; 
@@ -66,10 +70,10 @@ body{
     }
 }
 
-li{
+/*li{
     display:flex;
     justify-content: center;
-}
+}*/
 
 .footer{
     display: flex;
@@ -89,6 +93,13 @@ li{
 
 /* About us page*/
 
+.siteVersion {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-right: 25px;
+}
+
 .aboutDescription{
     display: flex;
     flex-direction: column;
@@ -103,9 +114,9 @@ li{
 /* Photos page*/
 
 .photoDetails{
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 figcaption{
