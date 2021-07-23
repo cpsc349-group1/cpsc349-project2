@@ -2,7 +2,9 @@ header{
     background-color: lightblue;
     color: black;
     width: 100%;
-    max-width: 100%;
+    max-width: 100vh;
+    padding:0;
+    margin: 0;
 }
 nav{
     background-color: maroon;

@@ -18,13 +18,13 @@ pagination:
 
 <ul>
     {% for photo in pics %}
-        <li>
+        <li class="photoli">
             <a class="photoUrl" href="{{ photo.url }}">
                 A {{ photo.data.photo_keyword }} photo
                 by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
             </a>
 
-            <br class="indexPhotoDescription"> {{ photo.data.ai_description }}</br>
+            <p class="indexPhotoDescription"> {{ photo.data.ai_description }}</p>
         </li>
     {% endfor %}
 </ul>

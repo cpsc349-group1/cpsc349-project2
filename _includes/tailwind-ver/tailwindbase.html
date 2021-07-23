@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ title }} - {{ site }}</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+        
+    </head>
+    
+
+    <header class="w-screen mx-0 max-w-full bg-blue-200">
+        <h1> Pet Photos</h1>
+    </header>
+    
+    <body class="flex flex-col min-h-screen">
+        <nav class ="hidden sm:block bg-red-800 py-4 mb-10">
+            <ul class="flex justify-center items-center text-blue-500">
+                <li><a href="/tailwind-ver/tailwindindex">Index</a></li>
+                <li><a href="/tailwind-ver/tailwindabout">About Us</a></li>
+            </ul>
+        </nav>
+        
+        <nav class ="sm:hidden bg-red-800 text-blue-500 py-4 mb-10">
+            <ul>
+                <li><a href ="#">Navigation</a>
+                    <ul>
+                        <li><a href="/tailwind-ver/tailwindindex/">Index</a></li>
+                        <li><a href="/tailwind-ver/tailwindabout">About Us</a></li>
+                    <ul>
+                </li>
+            </ul>
+        </nav>
+
+        <content class="flex-auto">
+            {{ content }}  
+        </content>
+          
+    </body>
+
+    <footer class="w-screen mx-0 max-w-full flex justify-center items-center bg-blue-200">
+        Copyright @ 2021 CSUF Team 1
+    </footer>
+</html>
