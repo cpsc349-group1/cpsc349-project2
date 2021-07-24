@@ -11,4 +11,59 @@
 
     }
 
+    .header {
+        @apply w-screen mx-0 max-w-full bg-blue-200 text-3xl
+    }
+
+    .body {
+        @apply flex flex-col min-h-screen
+    }
+
+    .nav {
+        @apply bg-red-800 text-blue-500 py-4 mb-10
+    }
+
+    .navItems {
+        @apply flex justify-center items-center
+    }
+
+    .content {
+        @apply flex-auto
+    }
+
+    .footer {
+        @apply w-screen mx-0 max-w-full flex justify-center items-center bg-blue-200
+    }
+
+    .aboutLinks {
+        @apply flex justify-center pb-4
+    }
+    
+    .aboutUsDesc {
+        @apply flex flex-col justify-center items-center
+    }
+
+    .descHeader {
+        @apply font-bold text-3xl pb-4
+    }
+
+    .credit {
+        @apply flex justify-center pb-4
+    }
+
+    .creditText {
+        @apply pl-1 text-blue-500
+    }
+    
+    .photoli {
+        @apply flex flex-row justify-center items-center p-4
+    }
+
+    .photolia {
+        @apply pr-2 text-blue-500
+    }
+
+    .prevNext {
+        @apply flex flex-row justify-center items-center text-blue-500 pb-2
+    }
 }
