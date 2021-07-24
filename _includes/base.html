@@ -7,7 +7,14 @@
         <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
         <link rel="stylesheet" href="{{ '/styles/flexbox.css' | url }}">
         <link rel="stylesheet" href="https://unpkg.com/mvp.css">
-        
+        <style>
+            body{
+                background-color: {{color_keyword}};
+                --red: {{red}};
+                --green: {{green}};
+                --blue: {{blue}};
+            }
+        </style>
     </head>
     
 
@@ -16,26 +23,28 @@
     </header>
     
     <body>
-            <nav class ="nav">
-                <ul class= "nav_list">
-                    <li><a href="/">Index</a></li>
-                    <li><a href="/about/">About Us</a></li>
-                </ul>
-            </nav>
-            
-            <nav class ="mobileNav">
-                <ul class= "mobileNavlist">
-                    <li><a href ="#">Navigation</a>
-                        <ul>
-                            <li id= "mobileIndex"><a href="/">Index</a></li>
-                            <li id= "mobileAboutUs"><a href="/about/">About Us</a></li>
-                        <ul>
-                    </li>
-                </ul>
-            </nav>
+        <nav class ="nav">
+            <ul class= "nav_list">
+                <li><a href="/">Index</a></li>
+                <li><a href="/about/">About Us</a></li>
+            </ul>
+        </nav>
+        
+        <nav class ="mobileNav">
+            <ul class= "mobileNavlist">
+                <li><a href ="#">Navigation</a>
+                    <ul>
+                        <li id= "mobileIndex"><a href="/">Index</a></li>
+                        <li id= "mobileAboutUs"><a href="/about/">About Us</a></li>
+                    <ul>
+                </li>
+            </ul>
+        </nav>
 
 
-        {{ content }}    
+        <div class = "ifdarkbg">
+            {{ content }}  
+        </div>  
     </body>
 
     <div class="footer">
