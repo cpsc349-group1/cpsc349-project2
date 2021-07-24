@@ -1,17 +1,20 @@
-header{
-    background-color: lightblue;
-    color: black;
-    width: 100%;
-    max-width: 100vh;
-    padding:0;
-    margin: 0;
-}
-nav{
-    background-color: maroon;
-    color: black;
-}
-  
-footer{
-    background-color: lightblue;
-    color: black;
+.ifdarkbg{  /*Checks if the background color is too dark for black text.*/
+    --accessible-color: calc(
+        (
+            (
+                (
+                    (var(--red) * 299) + 
+                    (var(--green) * 587) +
+                    (var(--blue) * 114)
+                ) / 1000
+            ) - 128
+        ) * -1000
+    );
+
+    color:  /*Changes the text color to white.*/
+        rgb(
+            var(--accessible-color)
+            var(--accessible-color)
+            var(--accessible-color)
+        );
 }
