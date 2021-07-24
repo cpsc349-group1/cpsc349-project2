@@ -614,13 +614,116 @@ video {
   }
 }
 
-/* Custom classes using @apply go here, e.g. */
-
-.white-text-on-blue-background {
+.custom-tailwind {
   --tw-bg-opacity: 1;
   background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity))
+}
+
+.header {
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100vw;
+  max-width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+  font-size: 1.875rem;
+  line-height: 2.25rem
+}
+
+.body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column
+}
+
+.nav {
+  margin-bottom: 2.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity))
+}
+
+.navItems {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.content {
+  flex: 1 1 auto
+}
+
+.footer {
+  margin-left: 0px;
+  margin-right: 0px;
+  display: flex;
+  width: 100vw;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  --tw-bg-opacity: 1;
+  background-color: rgba(191, 219, 254, var(--tw-bg-opacity))
+}
+
+.aboutLinks {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem
+}
+
+.aboutUsDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.descHeader {
+  padding-bottom: 1rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700
+}
+
+.credit {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem
+}
+
+.creditText {
+  padding-left: 0.25rem;
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity))
+}
+
+.photoli {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem
+}
+
+.photolia {
+  padding-right: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity))
+}
+
+.prevNext {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  --tw-text-opacity: 1;
+  color: rgba(59, 130, 246, var(--tw-text-opacity))
 }
 
 .sr-only {
@@ -32228,6 +32331,8 @@ video {
 .content-none {
   content: none;
 }
+
+/* Custom Tailwind classes go here */
 
 @media (min-width: 640px) {
   .sm\:container {

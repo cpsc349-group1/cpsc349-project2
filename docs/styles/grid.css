@@ -1,0 +1,125 @@
+header{
+    background-color: lightblue;
+    color: black;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header > h1 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: maroon;
+    color: black;
+    margin-bottom: 2.5rem;
+    display: grid;
+    justify-content: center; 
+}
+
+/* Index page*/
+.previous,
+.next{
+    padding: 5px;
+    justify-content: center;
+}
+
+.prevNext{
+    display: grid;
+}
+
+.photoUrl{
+    display: grid;
+    justify-content: center;
+    line-height: 47px;
+    padding-right: 10px;
+}
+
+body{
+    min-height: 100%;
+}
+
+.frontpage{
+    display: grid;
+    min-height: 100vh;
+    grid-auto-flow: row;
+}
+
+.indexPetPhotos{ 
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.unsplashLink{
+    padding-left: 5px;
+}
+
+#indexPhotoDescription{ 
+    display: grid;
+}
+
+.mobileNav{
+    display: none;}
+
+@media screen and (max-width: 800px){
+    .nav{
+        display: none;
+    }
+
+    .mobileNav{
+        display: grid;
+        justify-content: start;
+    }
+}
+
+li{
+    display:grid;
+    justify-content: center;
+    grid-auto-flow: column;
+}
+
+.footer{
+    display: grid;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 36px;
+    margin-top: auto;
+    background-color: lightblue;
+    
+}
+
+.prevNext{
+    display: grid;
+    grid-auto-flow:column;
+    justify-content: center;
+}
+
+/* About us page*/
+
+.aboutDescription{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+  
+}
+.projectDesc{
+     grid-auto-flow: row;
+    justify-items: center;
+}
+
+/* Photos page*/
+
+.photoDetails{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+}
+
+figcaption{
+    display: grid;
+    justify-items: center;
+}
