@@ -1,0 +1,56 @@
+---
+site: Pet Photos
+layout: /tailwind-ver-custom/tailwindbasecustom
+---
+<link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
+
+
+{{ content }}
+
+
+{% unless page.url == '/' or page.url == '/about/' %}
+    
+    <div class = "photoDetails">
+        <h2>Picture Info</h2>
+
+        {% if photographer_username != '' %}
+            <h3><a href="https://unsplash.com/@{{photographer_username}}">Link_To_Source</a></h3>
+        {% endif %}
+
+        <p>Ai description: {{ai_description}} </p>
+        <p>Stats downloads: {{stats_downloads}} </p>
+
+        {% if ai_primary_landmark_confidence != '' %}
+            <p>Ai primary landmark confidence: {{ai_primary_landmark_confidence}}</p>
+        {% endif %}
+
+        {% if photographer_first_name != '' %}
+            <p>Photographer first name: {{photographer_first_name}} </p>
+        {% endif %}
+
+        {% if photographer_last_name != '' %}
+            <p>Photographer last name: {{photographer_last_name}}</p>
+        {% endif %}
+
+        {% if photographer_username != '' %}
+            <p>Photographer username: {{photographer_username}}</p>
+        {% endif %}
+
+        {% if exif_aperture_value != '' %}
+            <p>Aperture value: {{exif_aperture_value}} </p>
+            <p>Camera make: {{exif_camera_make}} </p> 
+            <p>Camera model: {{exif_camera_model}} </p>
+            <p>Exposure time: {{exif_exposure_time}} </p>
+            <p>Focal length: {{exif_focal_length}} </p>
+            <p>Camera iso: {{exif_iso}} </p>
+        {% endif %}
+
+        {% if photo_location_city != '' %}
+            <p>City: {{photo_location_city}} </p>
+            <p>Country: {{photo_location_country}} </p>
+            <p>Location latitude: {{photo_location_latitude}}</p>
+            <p>Location longitude: {{photo_location_longitude}}</p>
+            <p>Location name: {{photo_location_name}} </p>
+        {% endif %}
+    </div>
+{% endunless %}

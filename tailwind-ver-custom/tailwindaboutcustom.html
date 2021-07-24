@@ -1,31 +1,25 @@
 ---
 title: About
-layout: base
+layout: /tailwind-ver-custom/tailwindbasecustom
 ---
-<link rel="stylesheet" href="{{ '/styles/flexbox.css' | url }}">
 
-
-<div>
-    <ul class="siteVersion">
-        <li><a href="/tailwind-ver/tailwindindex">Tailwind Version</a></li>
+<section>
+    <ul>
+        <li class="aboutLinks"><a href="/">Flexbox Version</a></li>
+        <li class="aboutLinks"><a href="/grid-ver/gridindex">Grid Version</a></li>
+        <li class="aboutLinks"><a href="/tailwind-ver/tailwindindex">Tailwind Version</a></li>
     </ul>
-    <ul class="siteVersion">
-        <li><a href="/grid-ver/gridindex">Grid Version</a></li>
-    </ul>
-    <ul class="siteVersion">
-        <li><a href="/tailwind-ver-custom/tailwindindexcustom">Tailwind Custom Version</a></li>
-    </ul>
-</div>
-
-<div class="aboutDescription">
-    <h1>CPSC349 Project 1</h1>
+</section>
+<article class= "aboutUsDesc">
+    <h1 class="descHeader">CPSC349 Project 1</h1>
     <h2>Made by:</h2>
     <p>Yu Li</p>
     <p>Roger Hanna</p>
     <p>Michael Nguyen</p>
     <p>David Bonnaud</p>
 
-    <div class="projectDesc">
+    <section>
         <p>This project was made by Yu Li, Roger Hanna, David Bonnaud, and Michael Nguyen. We used the Unsplashed dataset to build a site consisting of pet photos from various photographers. Some of the metadata such as the camera used and its settings along with city, location, etc. on each photo were extracted so more info is displayed with each photo. The dataset we used was from the <a href="https://github.com/unsplash/datasets">Unsplash dataset.</a></p>
-    </div>
-</div>
+    </section>
+</article>
+
